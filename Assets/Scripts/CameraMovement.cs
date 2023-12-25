@@ -44,7 +44,7 @@ public class CameraMovement : MonoBehaviour
         currentRotation.y += mouseX * sensitivity;
         currentRotation.x -= mouseY * sensitivity;
         
-        currentRotation.x = Mathf.Clamp(currentRotation.x, -45f, 45f);
+        currentRotation.x = Mathf.Clamp(currentRotation.x, -90f, 90f);
         
         camera.transform.eulerAngles = currentRotation;
     }
